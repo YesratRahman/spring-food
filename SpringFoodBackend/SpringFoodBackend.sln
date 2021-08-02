@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpringFoodBackend", "SpringFood\SpringFoodBackend.csproj", "{027500E3-F362-4441-95E7-3B79410DD773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringFoodTests", "SpringFoodTests\SpringFoodTests.csproj", "{8D156C3B-C3F9-411C-8B5A-CE4BC45473E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{027500E3-F362-4441-95E7-3B79410DD773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027500E3-F362-4441-95E7-3B79410DD773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027500E3-F362-4441-95E7-3B79410DD773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027500E3-F362-4441-95E7-3B79410DD773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D156C3B-C3F9-411C-8B5A-CE4BC45473E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D156C3B-C3F9-411C-8B5A-CE4BC45473E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D156C3B-C3F9-411C-8B5A-CE4BC45473E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D156C3B-C3F9-411C-8B5A-CE4BC45473E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4432F1E1-3E1B-46C8-97C8-E2D9C2DFE74B}
+	EndGlobalSection
+EndGlobal

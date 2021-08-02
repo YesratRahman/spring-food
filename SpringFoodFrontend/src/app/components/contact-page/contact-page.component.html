@@ -1,0 +1,51 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<div class="container contact-form">
+
+    <form  id="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <h3>Contact Us</h3>
+        <p> Please send your message below. We will get back to you at the earliest!
+
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Enter Full Name" name="name" ngModel
+                        required #name="ngModel">
+                    <div class="help is-error" *ngIf="name.invalid && name.touched" style="font-style: italic;">
+                        *Your Name Is Required In This Field*
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="email" type="text" placeholder="Enter Valid Email" email
+                        name="email" ngModel required #email="ngModel">
+                    <div class="help is-error" *ngIf="email.invalid && email.touched" style="font-style: italic;">
+                        *A Valid Email Is Required*
+                    </div>
+                </div>
+              
+                <br>
+                <input name="btnSubmit" class="btnContact" id="submit" type="submit" value="Send Message" [disabled] = "contactForm.invalid">
+                <br>
+                <br> 
+                <br> 
+                <div id = "messageSent"></div> 
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message" name="messages" ngModel
+                        required #messages="ngModel" style="width: 100%; height: 150px;"></textarea>
+                    <div class="help is-error" *ngIf="messages.invalid && messages.touched" style="font-style: italic;">
+                        *A Message Is Needed*
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+

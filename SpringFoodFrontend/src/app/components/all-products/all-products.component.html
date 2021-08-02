@@ -1,0 +1,37 @@
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2 class="title">
+            All Products
+        </h2>
+        <!-- <select>
+            <option>Default Sorting</option>
+            <option>Sort by price</option>
+            <option>Sort by sale</option>
+        </select> -->
+
+    </div>
+
+    <ul>
+        <li *ngFor="let product of products">
+            <a routerLink="/product/{{product.id}}">
+                <img src="{{product.image}}" alt="">
+                <div class="content">
+                    <div class="name">
+                        {{product.name}}
+                    </div>
+                    <div class="description">
+                        <span>
+                            {{product.description}}
+                        </span>
+                    </div>
+                    <div class="price">
+                        <span>
+                            {{product.price|currency}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>

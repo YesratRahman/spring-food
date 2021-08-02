@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+<app-admin></app-admin>
+<div class="small-container">
+    <br> <br>
+
+    <ul>
+        <li *ngFor="let product of products">
+            <a routerLink="/product/{{product.id}}" class="products">
+                <img src="{{product.image}}" alt="">
+                <div class="content">
+                    <div class="name">
+                        {{product.name}} ({{product.quantity}})
+                    </div>
+                    <div class="description">
+                        <span>
+                            {{product.description}}
+                        </span>
+                    </div>
+                    <div class="price">
+                        <span>
+                            {{product.price|currency}}
+                        </span>
+                    </div>
+
+                </div>
+            </a>
+            <div class="text-center">
+                <a type="button" class="btn btn-success btn-sm text-white mr-2" style="margin:5px;"
+                    routerLink="/edit-product/{{product.id}}">Update</a>
+
+                <button (click)="onDelete(product)" class="btn btn-danger btn-sm">
+                    Delete</button>
+
+            </div>
+
+        </li>
+    </ul>
+</div>

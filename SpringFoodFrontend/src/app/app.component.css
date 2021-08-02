@@ -1,0 +1,86 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.nav{
+    flex: 1;
+    text-align: right;
+}
+.ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.a{
+    text-decoration: none;
+    color: #555;
+
+}
+p{
+    color: #555;
+}
+
+
+
+
+
+/* .companyName {
+    font-size: 150%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(160, 52, 49), 0 0 5px darkblue;
+}
+
+.mat-toolbar {
+    height: 10vh;
+}
+
+div {
+    overflow: inherit;
+}
+
+a {
+    text-decoration: none;
+    font-size: 110%;
+    white-space: normal;
+}
+
+button {
+    font-size: 110%;
+    min-width: min-content;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+    font-size: 200%;
+    text-align: center;
+}
+
+body {
+    background-color: #b69e7b;
+}
+
+.submit {
+    background-color: #dbd2c1;
+    color: black;
+}
+
+.colorFix {
+    color: #101111f8;
+}
+
+#navigation {
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    height: 80px;
+} */

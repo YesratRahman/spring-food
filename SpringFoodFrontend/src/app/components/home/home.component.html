@@ -1,0 +1,50 @@
+<div class="header">
+    <div class="row">
+        <div class="col-2">
+            <h1>
+                Spring Food
+            </h1>
+            <p> Get fresh food from our firm to your table </p>
+            <a class="shop" routerLink="/allProducts" class="btn">Shop Now &#8594;</a>
+
+        </div>
+        <div class="col-2">
+            <img src="assets/image2.png">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="categories">
+    <div class="small-container"> 
+        <div class="row row-2">
+            <h3 style="margin-top: 10px; margin-bottom: 50px;"> Shop Popular Categories</h3>
+            
+
+<ul>
+    <li *ngFor="let category of categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <a routerLink="/product-by-category/{{category.id}}">
+                            <img [src]="category.products[0].image" [alt]="category.name" />
+                            <div class="content">
+                                <div class="name">
+                                    {{category.name}}
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+    </li>
+</ul>
+</div></div>
+</div>

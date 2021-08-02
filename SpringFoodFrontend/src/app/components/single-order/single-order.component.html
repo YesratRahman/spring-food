@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<div class="jumbotron text-center">
+  <h3 class="display-3">Thank You!</h3>
+  <hr>
+  <div>
+    <span>Name :<strong> {{order.name}} </strong></span>
+    <br>
+    <span>Order Placed:<strong> {{order.date | date:'fullDate'}} </strong></span>
+    <p>{{order.email}}</p>
+    <span>Order Total :<strong> {{order.orderTotal | currency}} </strong></span>
+  </div>
+  <p>
+    Having trouble? <a routerLink="/contact">Contact us</a>
+  </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="https://bootstrapcreative.com/" routerLink="/allProducts">Continue to
+      shop</a>
+  </p>
+</div>

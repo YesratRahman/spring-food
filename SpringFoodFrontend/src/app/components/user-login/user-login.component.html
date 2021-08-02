@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="body">
+    <div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post" (ngSubmit)="submit(loginForm)" #loginForm="ngForm">
+            
+            <h2>Login</h2>
+            <p class="hint-text">Login if you have an account</p>
+            <div class="form-group">
+
+                <input type="text" class="form-control" name="username" placeholder="User Name" required="required" #userNa="ngModel"
+                    [(ngModel)]="username">
+                    <div *ngIf="userNa.errors && (userNa.dirty || userNa.touched)" class="alert alert-danger">
+                        <small>User name is required </small>
+                      </div>
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required" #userPass="ngModel"
+                    [(ngModel)]="password">
+                    <div *ngIf="userPass.errors && (userPass.dirty || userPass.touched)" class="alert alert-danger">
+                        <small>Password is required </small>
+                      </div>
+            </div>
+
+            <div class="form-group">
+                <input class="btn btn-success btn-lg btn-block" type="submit" [disabled]="loginForm.invalid" value="Sign In">
+
+            </div>
+        </form>
+        <div class="text-center" style="color: blue;">Don't have an account? <a style="color: blue;"
+                href="/register">Sign Up</a></div>
+    </div>
+</div>

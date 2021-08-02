@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+<app-admin> </app-admin>
+
+<div class="form-add">
+<br> 
+
+      <h5 class="h3 mb-3 font-weight-bold" style="text-align: center;"> Add Product </h5>
+      <br> 
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name"> Name</label>
+          <input type="text" id="name" class="form-control mb-0 mb-lg-2" required [(ngModel)]="name">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="price"> Price</label>
+          <input type="text" id="price" class="form-control mb-0 mb-lg-2" required [(ngModel)]="price">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="quantity">Quantity</label>
+        <input type="text" id="quantity" required class="form-control" [(ngModel)]="quantity">
+      </div>
+      <div class="mb-3">
+        <label for="image">Image Url</label>
+        <input type="text" id="image" required class="form-control" [(ngModel)]="image">
+      </div>
+
+      <div class="mb-3">
+        <label for="description">Description</label>
+        <input type="text" id="description" required class="form-control" [(ngModel)]="description">
+      </div>
+      <div>
+        <label for="category">Category</label>
+        <select class="form-control" [(ngModel)]="categoryId" style="width: 300px;">
+
+          <option *ngFor="let category of categories" value="{{category.id}}">
+            {{category.name}}
+          </option>
+        </select>
+      </div> 
+      <br> 
+      <br> 
+     
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="addProduct()">Add Product</button>
+
+  </div>

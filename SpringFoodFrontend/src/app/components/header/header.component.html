@@ -1,0 +1,30 @@
+<div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img class="logoIm" href="#" routerLink="/" src="assets/logo.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/allProducts" href="#">Products</a></li>
+                    <li *ngIf="signedIn && isAdmin()"><a routerLink="/admin/addProduct">Admin Area</a></li>
+                    <li><a routerLink="/contact">Contact</a></li>
+                    <li *ngIf="!signedIn">
+                        <a routerLink="/register">Sign Up</a>
+                    </li>
+                    <li *ngIf="!signedIn">
+                        <a routerLink="/login">Sign In</a>
+                    </li>
+                    <li *ngIf="signedIn" >
+                        <a (click)="signOut()" routerLink="/allProducts">Sign Out </a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="assets/cart.png" routerLink="/cart-page" href="#" width="30px" height="30px">
+            <span class="lblCartCount">{{totalItem}}</span>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="small-container">
+    <h2 class="single-cat-name"> {{products[0].category?.name}}</h2>
+
+    <ul>
+        <li *ngFor="let product of products">
+
+            <a routerLink="/product/{{product.id}}">
+                <img src="{{product.image}}" alt="">
+                <div class="content">
+                    <div class="name">
+                        {{product.name}}
+                    </div>
+                    <div class="description">
+                        <span>
+                            {{product.description}}
+                        </span>
+                    </div>
+                    <div class="price">
+                        <span>
+                            {{product.price|currency}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
